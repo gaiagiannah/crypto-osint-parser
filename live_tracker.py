@@ -65,7 +65,7 @@ def scan_latest_live_block(w3_instance):
                     value_eth = w3_instance.from_wei(tx['value'], 'ether')
                     sender = tx['from']
                     
-                    print(f"\n🚨 [MIXER INTERCEPT] Active transaction flagged in block #{block_num}!")
+                    print(f"\n [MIXER INTERCEPT] Active transaction flagged in block #{block_num}!")
                     print(f"    Transaction Hash: {tx_hash}")
                     print(f"    Origin Originator: {sender}")
                     print(f"    Mixer Destination: {MIXER_SIGNATURES[recipient_lowercase]}")

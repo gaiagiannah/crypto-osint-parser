@@ -94,9 +94,9 @@ def scan_for_privacy_mixers(wallet_transaction_history):
         time.sleep(0.5)
         
         if destination_address in KNOWN_MIXER_CONTRACTS:
-            print(f"    ⚠️ CRITICAL FLAG: Privacy Obfuscation Attempt Intercepted!")
-            print(f"    🚨 Destination matches known smart contract: {KNOWN_MIXER_CONTRACTS[destination_address]}")
-            print(f"    🔴 RISK ASSESSMENT SCORE: 100/100 (HIGH RISK)")
+            print(f"     CRITICAL FLAG: Privacy Obfuscation Attempt Intercepted!")
+            print(f"     Destination matches known smart contract: {KNOWN_MIXER_CONTRACTS[destination_address]}")
+            print(f"     RISK ASSESSMENT SCORE: 100/100 (HIGH RISK)")
             return True
             
     print("[+] Scan Clean: No known crypto mixer links detected in immediate transactions.")
